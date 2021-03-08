@@ -2,18 +2,19 @@
 
 num = int(input())
 
-n = num
+i = num
 
 cnt = int(0)
 
+
 while True :
-     ten = int(n/10)
-     one = n%10
-     total = ten+one
-     n = int(str(n%10)+str(total%10))
+     ten = int(i/10)   #2
+     one = i%10   # 6
+     total = ten+one   # 08
+     
+     i = int(str(one) + str(total%10)) 
      cnt += 1
-     if(num == n):
+     if(num == i) : 
           break
 
 print(cnt)
-    
