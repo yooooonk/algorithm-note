@@ -9,26 +9,23 @@
 내려오는 날 1을 빼주는게 포인트!!
 """
 
-
-
 #  시간초과
-""" cur = 0
+""" 
+cur = 0
 day = 0
 while True :
     cur += up    
-    day += 1 # 하루
+    day += 1 # 하루  
     if(cur>=top) : break;    
-    cur -= down
-    
+    cur -= down    
 print(day)     
 """
 # up*x - down*(x-1) >= top  
-# x >= (down+top)/(top-down)
+# x >= (top-down)/(up-down)
 
 up,down,top = map(int,input().split())
 x = (top-down)/(up-down)
 print(int(x) if x == int(x) else int(x)+1)
-
 
 
 #print(int(day) if int(day)==day else int(day)+1)    
