@@ -1,0 +1,82 @@
+
+<html>
+    <script>
+let arrayHouse = [[26, 40, 83], [49, 60, 57], [13, 89, 99]]
+
+let totalCost = 0
+let findIndex = ''
+let findCost = 0
+
+
+const calculate = (arrayHouse) => {
+    for(let i = 0; i < arrayHouse.length; i++) {
+        for(let ii = 0; ii < arrayHouse[i].length; ii++){
+            let index = ii + 1
+            if (index <= arrayHouse[i].length - 1) {
+                console.log('end :: 1', findCost, findIndex)
+                if (i > 0) {
+                    console.log('end :: 1-2', findCost, findIndex)
+                    if (ii > 0) {
+                        console.log('end :: 1-3', findCost, findIndex)
+                        if (findCost > arrayHouse[i][index]) {
+                            findCost = arrayHouse[i][index]
+                            findIndex = index
+                            console.log('end :: 1-4', findCost, findIndex)
+                        }
+                    } else {
+                        console.log('end :: 1-2-1', findCost, findIndex, ii, index)
+                        if(findIndex === ii) {
+                        console.log('end :: 1-2-2', findCost, findIndex, ii, index)
+                            ii += 1
+                            index += 1
+                            if (arrayHouse[i][ii] < arrayHouse[i][index]) {
+                        console.log('end :: 1-2-2', findCost, findIndex, ii, index)
+                            
+                            findIndex = ii
+                            findCost = arrayHouse[i][ii]
+                            console.log('end :: 1-2-3', findCost, findIndex, ii, index)
+                            } else {
+                                
+                            findIndex = index
+                            findCost = arrayHouse[i][index]
+                            }
+                        } else {
+                            console.log('end :: 1-2-4', findCost, findIndex, ii, index)
+                            if (arrayHouse[i][ii] < arrayHouse[i][index]) {
+                                findIndex = ii
+                                findCost = arrayHouse[i][ii]
+                                console.log('end :: 1-2-5', findCost, findIndex, ii, index)
+                            }   
+                        }
+                    }
+                } else {
+                    console.log('end :: 2', findCost, findIndex)
+                    if (findIndex !== ii) {   
+                        console.log('end :: 2-1', findCost, findIndex)
+                        if (ii > 0) {
+                            console.log('end :: 2-2', findCost, findIndex)
+                            if (findCost > arrayHouse[i][index]) {
+                                findCost = arrayHouse[i][index]
+                                findIndex = index
+                                console.log('end :: 2-3', findCost, findIndex)
+                            }
+                        } else {
+                            console.log('end :: 2-2-1', findCost, findIndex)
+                            if (arrayHouse[i][ii] < arrayHouse[i][index]) {
+                                findIndex = ii
+                                findCost = arrayHouse[i][ii]
+                                console.log('end :: 2-2-2', findCost, findIndex)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        console.log('end :: 10', findCost, findIndex)
+        totalCost += findCost
+    }
+}
+calculate(arrayHouse)
+console.log(totalCost)
+</script>
+</html>
