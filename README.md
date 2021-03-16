@@ -9,6 +9,7 @@
 
 ## 📚 문제풀이 
 
+✔ [1010 다리놓기](https://github.com/yooooonk/algorithm-note/blob/main/1011.py) ➼ [문제](https://www.acmicpc.net/problem/1010)
 ✔ [1011 fly me to te alpha centauri](https://github.com/yooooonk/algorithm-note/blob/main/1011.py) ➼ [문제](https://www.acmicpc.net/problem/1011)
 ✔ [1021 회전하는 큐](https://github.com/yooooonk/algorithm-note/blob/main/1021.py)
 ✔ [1037 약수](https://github.com/yooooonk/algorithm-note/blob/main/1037.py)➼ [문제](https://www.acmicpc.net/problem/1037)
@@ -30,16 +31,16 @@
 ✔ [4948 베트르랑 공준](https://github.com/yooooonk/algorithm-note/blob/main/4948.py) ➼ [문제](https://www.acmicpc.net/problem/4948)
 ✔ [4949 균형잡힌 세상](https://github.com/yooooonk/algorithm-note/blob/main/4949.py) ➼ [문제](https://www.acmicpc.net/problem/4949)
 ✔ [7576 토마토](https://github.com/yooooonk/algorithm-note/blob/main/7576.py) ➼ [문제](https://www.acmicpc.net/problem/7576)
+✔ [9012 괄호](https://github.com/yooooonk/algorithm-note/blob/main/9012.py) ➼ [문제](https://www.acmicpc.net/problem/9012)
 ✔ [9184 신나는 함수 실행](https://github.com/yooooonk/algorithm-note/blob/main/9184.py) ➼ [문제](https://www.acmicpc.net/problem/9184)
 ✔ [9461 파도반 수열](https://github.com/yooooonk/algorithm-note/blob/main/9461.py) ➼ [문제](https://www.acmicpc.net/problem/9461)
 ✔ [10250 AMC 호텔](https://github.com/yooooonk/algorithm-note/blob/main/10250.py) ➼ [문제](https://www.acmicpc.net/problem/10250)
 ✔ [10815 숫자카드](https://github.com/yooooonk/algorithm-note/blob/main/10815.py) ➼ [문제](https://www.acmicpc.net/problem/10815)
 ✔ [11047 동전0](https://github.com/yooooonk/algorithm-note/blob/main/11047.py) ➼ [문제](https://www.acmicpc.net/problem/11047)
+✔ [11050 이항계수1](https://github.com/yooooonk/algorithm-note/blob/main/11050.py) ➼ [문제](https://www.acmicpc.net/problem/11050)
 ✔ [11053 가장 긴 증가 부분 수열](https://github.com/yooooonk/algorithm-note/blob/main/11053.py) ➼ [문제](https://www.acmicpc.net/problem/11053)
 ✔ [11399 ATM](https://github.com/yooooonk/algorithm-note/blob/main/11399.py) ➼ [문제](https://www.acmicpc.net/problem/11399)
 ✔ [11651 좌표 정렬하기2](https://github.com/yooooonk/algorithm-note/blob/main/11651.py) ➼ [문제](https://www.acmicpc.net/problem/11651)
 ✔ [11729 하노이의 탑 이동순서](https://github.com/yooooonk/algorithm-note/blob/main/11729.py) ➼ [문제](https://www.acmicpc.net/problem/11729)
 )
 
-
-✘ 
