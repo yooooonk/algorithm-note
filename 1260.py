@@ -17,28 +17,18 @@ for _ in range(b):
     graph[j].append(i)
 
 def DFS(start):    
-    print(graph)
     stack=[start]
     visited=[]
     while stack :
         cur = stack.pop()
-        
+        if cur not in visited:
+            print(cur, end=' ')
         visited.append(cur)
-        print('visited',visited)
+        graph[cur].sort(reverse=True)
         for i in graph[cur]:
-            
             if i not in visited:                
                 stack.append(i)
-    print(visited) 
-
-""" visit_list = []
-def DFS(cur):
-    visit_list.append(cur)
-    print(cur,end=' ')
-    for i in graph[cur]:
-        if i not in visit_list :
-            DFS(i)
-     """
+   
 
 def BFS(graph,start):    
     q=[start]
@@ -46,10 +36,11 @@ def BFS(graph,start):
     
     while q :
         cur = q.pop(0)        
+        
         if cur not in visited: 
             print(cur, end=' ')
         visited.append(cur)    
-
+        graph[cur].sort()
         #print(cur,end=' ')
         for i in graph[cur]:  
             #print('i',i,visited)          
