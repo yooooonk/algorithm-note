@@ -4,7 +4,7 @@
 import sys
 input = sys.stdin.readline
 
-n = int(input())
+n = int(input()) 
 num = []
 for _ in range(n):
     num.append(int(input()))
@@ -38,7 +38,6 @@ def mode():
 
 def diff():
     print(max(num)-min(num))
-
 
 avg()
 mid()
