@@ -1,13 +1,17 @@
 # Algorithm Note
 
 ## 📁자료구조
+
 - [Linked list](https://github.com/yooooonk/algorithm-note/blob/main/structure/linkedList.py)
 - [BFS](https://github.com/yooooonk/algorithm-note/blob/main/structure/BFS.py)
 - [DFS](https://github.com/yooooonk/algorithm-note/blob/main/structure/DFS.py)
 - [DP](https://github.com/yooooonk/algorithm-note/blob/main/structure/DP.py)
 - [이진탐색법](https://github.com/yooooonk/algorithm-note/blob/main/structure/biarySearch.py)
 
-## 📚 문제풀이 
+## 📚 문제풀이
+
+✔ [level2 - 다리를 지나는 트럭](https://github.com/yooooonk/algorithm-note/blob/main/p_bridge.py)
+✔ [level2 - 프린터](https://github.com/yooooonk/algorithm-note/blob/main/p2_printer.py)
 
 ✔ [1010 다리놓기](https://github.com/yooooonk/algorithm-note/blob/main/1011.py) ➼ [문제](https://www.acmicpc.net/problem/1010)
 ✔ [1011 fly me to te alpha centauri](https://github.com/yooooonk/algorithm-note/blob/main/1011.py) ➼ [문제](https://www.acmicpc.net/problem/1011)
@@ -22,8 +26,8 @@
 ✔ [1932 정수 삼각형](https://github.com/yooooonk/algorithm-note/blob/main/1932.py) ➼ [문제](https://www.acmicpc.net/problem/1932)
 ✔ [2164 카드2](https://github.com/yooooonk/algorithm-note/blob/main/2164.py) ➼ [문제](https://www.acmicpc.net/problem/2164)
 ✔ [2606 바이러스](https://github.com/yooooonk/algorithm-note/blob/main/2606.py)
-✔ [2609 최대공약수와 최소공배수](https://github.com/yooooonk/algorithm-note/blob/main/2609.py) ➼ [문제](https://www.acmicpc.net/problem/2609) 
-✔ [2751 수 정렬하기2](https://github.com/yooooonk/algorithm-note/blob/main/2751.py) ➼ [문제](https://www.acmicpc.net/problem/2751) 
+✔ [2609 최대공약수와 최소공배수](https://github.com/yooooonk/algorithm-note/blob/main/2609.py) ➼ [문제](https://www.acmicpc.net/problem/2609)
+✔ [2751 수 정렬하기2](https://github.com/yooooonk/algorithm-note/blob/main/2751.py) ➼ [문제](https://www.acmicpc.net/problem/2751)
 ✔ [2805 나무자르기](https://github.com/yooooonk/algorithm-note/blob/main/2805.py) ➼ [문제](https://www.acmicpc.net/problem/2805)
 ✔ [2839 설탕배달](https://github.com/yooooonk/algorithm-note/blob/main/2839.py) ➼ [문제](https://www.acmicpc.net/problem/2839)
 ✔ [2869 달팽이는 올라가고싶다](https://github.com/yooooonk/algorithm-note/blob/main/2869.py) ➼ [문제](https://www.acmicpc.net/problem/2869)
@@ -44,4 +48,3 @@
 ✔ [11651 좌표 정렬하기2](https://github.com/yooooonk/algorithm-note/blob/main/11651.py) ➼ [문제](https://www.acmicpc.net/problem/11651)
 ✔ [11729 하노이의 탑 이동순서](https://github.com/yooooonk/algorithm-note/blob/main/11729.py) ➼ [문제](https://www.acmicpc.net/problem/11729)
 )
-
