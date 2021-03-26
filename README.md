@@ -10,8 +10,9 @@
 
 ## 📚 문제풀이
 
-✔ [level2 - 다리를 지나는 트럭](https://github.com/yooooonk/algorithm-note/blob/main/p_bridge.py)
-✔ [level2 - 프린터](https://github.com/yooooonk/algorithm-note/blob/main/p2_printer.py)
+✔ [level2 - 기능개발(스택/큐)](https://github.com/yooooonk/algorithm-note/blob/main/p2_develope.py)
+✔ [level2 - 다리를 지나는 트럭(스택/큐)](https://github.com/yooooonk/algorithm-note/blob/main/p_bridge.py)
+✔ [level2 - 프린터(스택/큐)](https://github.com/yooooonk/algorithm-note/blob/main/p2_printer.py)
 
 ✔ [1010 다리놓기](https://github.com/yooooonk/algorithm-note/blob/main/1011.py) ➼ [문제](https://www.acmicpc.net/problem/1010)
 ✔ [1011 fly me to te alpha centauri](https://github.com/yooooonk/algorithm-note/blob/main/1011.py) ➼ [문제](https://www.acmicpc.net/problem/1011)
