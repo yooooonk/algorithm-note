@@ -1,0 +1,26 @@
+<html>
+  <script>
+    // 멀쩡한 사각형구하는 공식 : w*h-(w+h-gcd(w,h))
+    function solution(w, h) {
+      var answer = 1;
+      let gcd = 0;
+
+      // 최대공약수구하기
+      let a = w;
+      let b = h;
+      while (true) {
+        if (a % b === 0) {
+          gcd = b;
+          break;
+        }
+        c = a % b;
+        a = b;
+        b = c;
+      }
+
+      return w * h - (w + h - gcd);
+    }
+
+    console.log(solution(8, 12));
+  </script>
+</html>
