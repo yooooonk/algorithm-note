@@ -1,0 +1,30 @@
+<html>
+  <script>
+    function solution(skill, skill_trees) {
+      var answer = 0;
+      let skillArr = skill.split('');
+
+      skill_trees.forEach((tree) => {
+        console.log(tree);
+        let idx = -1;
+        let flag = true;
+
+        for (let i = 0; i < skillArr.length; i++) {
+          let temp = tree.indexOf(skillArr[i]);
+          console.log(skillArr[i]);
+
+          if (temp < idx) {
+            flag = false;
+            break;
+          }
+          idx = temp;
+        }
+
+        if (flag) answer++;
+      });
+      return answer;
+    }
+
+    console.log(solution('CBD', ['BACDE', 'CBADF', 'AECB', 'BDA']));
+  </script>
+</html>
