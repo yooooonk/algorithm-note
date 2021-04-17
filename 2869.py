@@ -8,26 +8,15 @@
 
 내려오는 날 1을 빼주는게 포인트!!
 """
+import sys
+input = sys.stdin.readline
 
-#  시간초과
-""" 
-cur = 0
-day = 0
-while True :
-    cur += up    
-    day += 1 # 하루  
-    if(cur>=top) : break;    
-    cur -= down    
-print(day)     
-"""
-# up*x - down*(x-1) >= top  
-# x >= (top-down)/(up-down)
-
-up,down,top = map(int,input().split())
-x = (top-down)/(up-down)
-print(int(x) if x == int(x) else int(x)+1)
+A,B,V = map(int,input().split())
+# A*d - B(d-1) >= V
+# Ad - Bd + B >= V
+# d(A-B) >= V-B
+# d >= (V-B)/(A-B)
 
 
-#print(int(day) if int(day)==day else int(day)+1)    
-
-
+x = (V-B)/(A-B);
+print(int(x) if x== int(x) else int(x)+1)
