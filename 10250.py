@@ -7,7 +7,7 @@
 ## 나머지가 0일 때의 처리, 표현
 """
 
-case = int(input())
+""" case = int(input())
 
 for i in range(case):    
     h,w,n = map(int,input().split())
@@ -17,3 +17,21 @@ for i in range(case):
         room -= 1
         floor = h
     print(f'{floor*100+room}')
+ """
+ 
+import sys
+input = sys.stdin.readline
+
+case = int(input())
+
+for _ in range(case):
+    h,w,n = map(int, input().split())
+    
+    room = n//h+1
+    floor = n%h
+    if floor == 0:
+        floor = h
+        room -= 1
+
+    print(floor*100+room)
+
