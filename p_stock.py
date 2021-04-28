@@ -1,4 +1,4 @@
-# 프로그래머스 - 주식가격
+# 프로그래머스 - 주식가격  
 from collections import deque
 
 def solution(prices):
