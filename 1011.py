@@ -1,7 +1,7 @@
 # fly me to te alpha centauri
 # https://www.acmicpc.net/problem/1011
 
-n = int(input())
+""" n = int(input())
 
 def move(dist) :
     k = 0
@@ -26,6 +26,21 @@ def move(dist) :
 
 for _ in range(n):
     x,y = map(int,input().split())
-    move(y-x)
-    
-    
+    move(y-x)    
+"""
+
+t = int(input())
+for i in range(t) :
+    x,y = map(int, input().split())
+    diff = y-x
+
+    if diff <= 3:
+        print(diff)
+    else:
+        n = int(diff**0.5)
+        if diff == n**2:
+            print(2*n-1)
+        elif n**2 < diff <= n**2 + n:
+            print(2*n)
+        else :
+            print(2*n+1)

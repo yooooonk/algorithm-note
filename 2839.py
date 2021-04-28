@@ -1,7 +1,7 @@
 # 설탕 배달
 # https://www.acmicpc.net/problem/2839
 
-n = int(input())
+""" n = int(input())
 pack = 0
 
 while True:
@@ -16,13 +16,23 @@ while True:
     if n<0 :
         print(-1)
         break;
+ """
+sugar = int(input())
 
-""" 
-내 원래답 
+pack = 0
+while True:
+    
+    if sugar%5 ==0:
+        pack += sugar//5
+        break;    
+    sugar -= 3
+    pack += 1
 
-pack += n//5 # 6인 경우 여기서 걸려버림
-pack += n%5//3
+    if sugar < 0 :        
+        pack = -1
+        break;    
 
-if n%5%3 != 0  d
- print(-1)
-"""
+print(pack)
+    
+
+

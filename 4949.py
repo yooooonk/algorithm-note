@@ -8,6 +8,8 @@
 - ( ([]) 이런 경우 flag는 바뀌지않았는데 false인 경우임
 - stack이 비었는지도 확인해줘야함!!!
 - () [] 여러쌍이므로 pop하고 바로 printㅎ면안됨 일단 끝까지 돌아야..
+ 
+
  """
 
 while True:
@@ -21,7 +23,7 @@ while True:
         if i == '(' or i == '[':
             stack.append(i)
             
-        elif i == ')': # stack에 요소가 있는지 확인해줘야함            
+        elif i == ')': # stack에 요소가 있는지 확인해줘야함     pop()       
             if stack and stack[-1] == '(' :
                 stack.pop()
             else :
@@ -33,8 +35,4 @@ while True:
               else :
                 result = False
                 break
-    print('yes' if result and not(stack) else 'no')     
-            
-         
-    
-    
+    print('yes' if result and not(stack) else 'no')   

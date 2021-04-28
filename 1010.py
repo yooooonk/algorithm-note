@@ -19,8 +19,7 @@ def f(num):
     
     dp[num] = num*f(num-1)
     return dp[num]
-    
-    
+   
 
 for n,m in case:      
     print(f(m)//(f(n)*f(m-n))) 

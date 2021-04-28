@@ -13,19 +13,16 @@ class MaxHeap:
                 cur = parent
             else :
                 break;        
-    
-    def delete(self):
-        # 구현해보세요!
-        return 8  # 8 을 반환해야 합니다.
 
-""" max_heap = MaxHeap()
+
+max_heap = MaxHeap()
 max_heap.insert(3)
 max_heap.insert(4)
 max_heap.insert(2)
 max_heap.insert(9)
 print(max_heap.items)  # [None, 9, 4, 2, 3] 가 출력되어야 합니다!  
 
- """
+
 
 max_heap = MaxHeap()
 max_heap.insert(8)

@@ -1,7 +1,7 @@
 # 신나는 함수 실행
 # https://www.acmicpc.net/problem/9184
 
-MAX = 21
+""" MAX = 21
 dp = [[[0]*MAX for _ in range(MAX)] for __ in range(MAX)]
 
 def w(a,b,c):
@@ -30,4 +30,9 @@ while True:
 
 for a,b,c in case :
     print("w(%d, %d, %d) = %d" % (a,b,c,w(a,b,c)))   
-    
+     """
+
+max = 3
+w = [[[0]*max for _ in range(max)] for _ in range(max)]
+
+print(w)
