@@ -24,8 +24,9 @@ print(solution([0, 0, 0, 0],[100, 50, 34, 25] 	))
  """
 from collections import deque
 
-def solution(progresses, speeds):
-   
+def solution(pro, sp):
+    progresses = deque(pro)
+    speeds = deque(sp)
     answer = []
     while progresses :        
         
@@ -39,8 +40,8 @@ def solution(progresses, speeds):
             while progresses:
                 if progresses[0] < 100:
                     break;
-                speeds.pop(0)
-                progresses.pop(0)
+                speeds.popleft()
+                progresses.popleft()
                 cnt += 1
             print(cnt)
             answer.append(cnt)
