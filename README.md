@@ -10,6 +10,8 @@
 
 ## 📚 문제풀이
 
+✔ [다음 큰 숫자](https://github.com/yooooonk/algorithm-note/blob/main/p_nextBigNumber.py)
+✔ [주식가격](https://github.com/yooooonk/algorithm-note/blob/main/p_stock.py)
 😵 [level2 - 124나라의 숫자](https://github.com/yooooonk/algorithm-note/blob/main/p2_124world.html)
 ✔ [level2 - 기능개발(스택/큐)](https://github.com/yooooonk/algorithm-note/blob/main/p2_develope.py)
 ✔ [level2 - 다리를 지나는 트럭(스택/큐)](https://github.com/yooooonk/algorithm-note/blob/main/p_bridge.py)
