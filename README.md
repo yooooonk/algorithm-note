@@ -10,6 +10,8 @@
 
 ## 📚 문제풀이
 
+✔ [2x 타일링](https://github.com/yooooonk/algorithm-note/blob/main/p_2xTiling.py)
+✔ [예상 대진표](https://github.com/yooooonk/algorithm-note/blob/main/p_tournament.py)
 ✔ [다음 큰 숫자](https://github.com/yooooonk/algorithm-note/blob/main/p_nextBigNumber.py)
 ✔ [주식가격](https://github.com/yooooonk/algorithm-note/blob/main/p_stock.py)
 😵 [level2 - 124나라의 숫자](https://github.com/yooooonk/algorithm-note/blob/main/p2_124world.html)
