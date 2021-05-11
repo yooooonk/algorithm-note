@@ -10,6 +10,7 @@
 
 ## 📚 문제풀이
 
+✔ [카펫](https://github.com/yooooonk/algorithm-note/blob/main/p_carpet.py)
 ✔ [2x 타일링](https://github.com/yooooonk/algorithm-note/blob/main/p_2xTiling.py)
 ✔ [예상 대진표](https://github.com/yooooonk/algorithm-note/blob/main/p_tournament.py)
 ✔ [다음 큰 숫자](https://github.com/yooooonk/algorithm-note/blob/main/p_nextBigNumber.py)
