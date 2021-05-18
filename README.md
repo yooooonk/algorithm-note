@@ -10,6 +10,8 @@
 
 ## 📚 문제풀이
 
+✔ [크레인 인형뽑기](https://github.com/yooooonk/algorithm-note/blob/main/p_crane.py)
+✔ [영어 끝말잇기](https://github.com/yooooonk/algorithm-note/blob/main/p_wordChain.py)
 ✔ [삼각달팽이](https://github.com/yooooonk/algorithm-note/blob/main/p_triangleSnail.py)
 ✔ [소수찾기](https://github.com/yooooonk/algorithm-note)
 ✔ [카펫](https://github.com/yooooonk/algorithm-note/blob/main/p_carpet.py)
