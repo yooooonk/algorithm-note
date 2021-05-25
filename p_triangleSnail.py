@@ -8,6 +8,8 @@ def solution(n):
 
     for i in range(n) :
         for j in range(i,n) :
+            print(i,j,num)            
+                
             if i%3 == 0:
                 x += 1
 
@@ -24,8 +26,9 @@ def solution(n):
     for i in snail :
         for j in i :
             if(j != 0) :
-                answer.append(j)
+                answer.append(j) 
+    
             
     return answer
 
-print(solution(7))
+print(solution(6))
