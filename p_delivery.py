@@ -3,28 +3,22 @@
 from collections import deque
 
 def solution(N, road, K):
-    # dictionary로
-    nodes = {}
-    dist = {i:float('inf') if i != 1 else 0 for i in range(1,N+1)}
-
-    for x,y,d in road:
-        nodes[x] = nodes.get(x,[])+[(y,d)]
-        nodes[y] = nodes.get(y,[])+[(x,d)]
+    graph = {}
+    dist = {i:float('inf') if i != 1 else 0 for i in range(1, N+1) }
     
+    for v1, v2, d in road:
+        graph[v1] = graph.get(v1, []) + [(v2, d)]
+        graph[v2] = graph.get(v2, []) + [(v1, d)]
     visited = deque([1])
-
+    
     while visited:
-        cur = visited.popleft()
+        cur_node = visited.popleft()
+        for nxt_node, d in graph[cur_node]:
+            if dist[nxt_node] > dist[cur_node] + d:
+                dist[nxt_node] = dist[cur_node] + d
+                visited.append(nxt_node)
 
-        for nxt,d in nodes[cur] :
-            
-            if dist[nxt] > dist[cur]+d :
-                dist[nxt] = dist[cur]+d
-                visited.append(nxt)
-        
-        return len([True for dist in dist.values() if dist<=K])
-
-
+    return len([True for dist in dist.values() if dist <= K])
     
 
 N = 5
