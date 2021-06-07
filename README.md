@@ -10,6 +10,7 @@
 
 ## 📚 문제풀이
 
+✔ [짝지어 제거하기](https://github.com/yooooonk/algorithm-note/blob/main/p2_coupleRemove.py)
 ✔ [배달](https://github.com/yooooonk/algorithm-note/blob/main/p_delivery.py)
 ✔ [최댓값과 최솟값](https://github.com/yooooonk/algorithm-note/blob/main/p_minnmax.py)
 ✔ [크레인 인형뽑기](https://github.com/yooooonk/algorithm-note/blob/main/p_crane.py)
