@@ -9,6 +9,8 @@
 - [이진탐색법](https://github.com/yooooonk/algorithm-note/blob/main/structure/biarySearch.py)
 
 ## 📚 문제풀이
+
+✔ [오픈 채팅방](https://github.com/yooooonk/algorithm-note/blob/main/p2_openChat.py)
 ✔ [문자열 압축](https://github.com/yooooonk/algorithm-note/blob/main/p2_stringCompression.py)
 ✔ [짝지어 제거하기](https://github.com/yooooonk/algorithm-note/blob/main/p2_coupleRemove.py)
 ✔ [배달](https://github.com/yooooonk/algorithm-note/blob/main/p_delivery.py)
