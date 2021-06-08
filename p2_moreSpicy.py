@@ -38,7 +38,7 @@ def solution(scoville, K):
             break;
         elif len(scoville) == 1:
             answer = -1
-            break;
+            break
         else :
             a = heapq.heappop(scoville)            
             b = heapq.heappop(scoville)                        
