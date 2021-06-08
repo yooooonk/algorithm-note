@@ -1,3 +1,4 @@
+"""
 def solution(n):
     print('---------',n)
     dp = [0]*(n+1)
@@ -8,7 +9,8 @@ def solution(n):
 
     num = ['4','1','2']
     print('1'+'4')
-    """ def getDp(i):  
+    
+    def getDp(i):  
         print(dp)      
         if dp[i]:
             print(dp[i])
@@ -19,9 +21,23 @@ def solution(n):
             else:
                 dp[i] = getDp(n//3)+num[n%3]
                 print(dp[i])
-            return dp[i] """
+            return dp[i]
         
     
     return getDp(n)
+"""
 
-print(solution(12))
+# 124 나라의 숫자
+# https://programmers.co.kr/learn/courses/30/lessons/12899?language=python3
+
+def solution(n):
+    answer = ''
+    while n > 0:
+        n -= 1
+        answer = '124'[n%3] + answer
+        print(answer)
+        n //= 3
+    return answer
+
+
+print(solution(14))
