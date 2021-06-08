@@ -10,6 +10,9 @@
 
 ## 📚 문제풀이
 
+✔ [알고리즘 노트](https://github.com/yooooonk/algorithm-note/commit/021aae1eada158ec4e74a8d2e59de892ff83768e)
+✔ [더 맵게](https://github.com/yooooonk/algorithm-note/blob/main/p2_moreSpicy.py)
+
 ✔ [오픈 채팅방](https://github.com/yooooonk/algorithm-note/blob/main/p2_openChat.py)
 ✔ [문자열 압축](https://github.com/yooooonk/algorithm-note/blob/main/p2_stringCompression.py)
 ✔ [짝지어 제거하기](https://github.com/yooooonk/algorithm-note/blob/main/p2_coupleRemove.py)
