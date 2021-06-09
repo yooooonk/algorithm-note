@@ -10,8 +10,15 @@
 
 ## 📚 문제풀이
 
-✔ [알고리즘 노트](https://github.com/yooooonk/algorithm-note/commit/021aae1eada158ec4e74a8d2e59de892ff83768e)
-✔ [더 맵게](https://github.com/yooooonk/algorithm-note/blob/main/p2_moreSpicy.py)
+### BFS
+
+- ✔[2667 단지번호 붙이기](https://github.com/yooooonk/algorithm-note/blob/main/2667.py)
+- ✔[lv2 타겟넘버](https://github.com/yooooonk/algorithm-note/blob/main/p2_targetNumber.py)
+- ✔ [7576 토마토](https://github.com/yooooonk/algorithm-note/blob/main/7576.py)
+
+### 힙
+
+- ✔ [더 맵게](https://github.com/yooooonk/algorithm-note/blob/main/p2_moreSpicy.py)
 
 ✔ [오픈 채팅방](https://github.com/yooooonk/algorithm-note/blob/main/p2_openChat.py)
 ✔ [문자열 압축](https://github.com/yooooonk/algorithm-note/blob/main/p2_stringCompression.py)
@@ -55,7 +62,7 @@
 ✔ [4673 셀프넘버](https://github.com/yooooonk/algorithm-note/blob/main/4673.py) ➼ [문제](https://www.acmicpc.net/problem/4673)
 ✔ [4948 베트르랑 공준](https://github.com/yooooonk/algorithm-note/blob/main/4948.py) ➼ [문제](https://www.acmicpc.net/problem/4948)
 ✔ [4949 균형잡힌 세상](https://github.com/yooooonk/algorithm-note/blob/main/4949.py) ➼ [문제](https://www.acmicpc.net/problem/4949)
-✔ [7576 토마토](https://github.com/yooooonk/algorithm-note/blob/main/7576.py) ➼ [문제](https://www.acmicpc.net/problem/7576)
+
 ✔ [9012 괄호](https://github.com/yooooonk/algorithm-note/blob/main/9012.py) ➼ [문제](https://www.acmicpc.net/problem/9012)
 ✔ [9184 신나는 함수 실행](https://github.com/yooooonk/algorithm-note/blob/main/9184.py) ➼ [문제](https://www.acmicpc.net/problem/9184)
 ✔ [9461 파도반 수열](https://github.com/yooooonk/algorithm-note/blob/main/9461.py) ➼ [문제](https://www.acmicpc.net/problem/9461)
