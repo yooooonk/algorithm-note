@@ -1,6 +1,6 @@
 # Algorithm Note
 
-## 📁자료구조
+## 📁자료구조 / 알고리즘
 
 - [Linked list](https://github.com/yooooonk/algorithm-note/blob/main/structure/linkedList.py)
 - [BFS](https://github.com/yooooonk/algorithm-note/blob/main/structure/BFS.py)
