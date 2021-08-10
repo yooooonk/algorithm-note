@@ -1,38 +1,22 @@
 # 설탕 배달
 # https://www.acmicpc.net/problem/2839
 
-""" n = int(input())
-pack = 0
+import sys
 
-while True:
-    if n%5==0:
-        pack += n//5
-        print(pack)
-        break;
+input = sys.stdin.readline
+n = int(input())
+
+cnt = 0
+while n>=0:
+    if n %5==0:
+        cnt += n//5
+        print(cnt)
+        break
 
     n -= 3
-    pack += 1
+    cnt += 1
 
-    if n<0 :
-        print(-1)
-        break;
- """
-sugar = int(input())
+else :
+    print(-1)
 
-pack = 0
-while True:
-    
-    if sugar%5 ==0:
-        pack += sugar//5
-        break;    
-    sugar -= 3
-    pack += 1
-
-    if sugar < 0 :        
-        pack = -1
-        break;    
-
-print(pack)
-    
-
-
+    # 3으로 나눴을 때 안나눠지면 -1 리턴
