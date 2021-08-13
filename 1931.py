@@ -1,4 +1,4 @@
-# 회의실배정 https://www.acmicpc.net/problem/1931
+# 그리디 -  회의실배정 https://www.acmicpc.net/problem/1931
 
 import sys
 input = sys.stdin.readline
@@ -11,7 +11,13 @@ for i in range(n) :
     time.append((list(map(int,input().split()))))
 
 time.sort(key=lambda x:(x[1],x[0]))
-
-cnt = 0
+cnt = 1
 end = time[0][1]
-# for t in time :
+
+for t in time :
+    print(t)
+    if t[0] >= end :
+        cnt += 1
+        end = t[1]
+
+print(cnt)
