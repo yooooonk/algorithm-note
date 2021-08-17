@@ -6,16 +6,15 @@ input = sys.stdin.readline
 n = int(input())
 
 time = []
-# 빼기 시간순으로 정렬
+
 for i in range(n) :
     time.append((list(map(int,input().split()))))
 
 time.sort(key=lambda x:(x[1],x[0]))
-cnt = 1
-end = time[0][1]
+cnt = 0
+end = 0
 
 for t in time :
-    print(t)
     if t[0] >= end :
         cnt += 1
         end = t[1]
