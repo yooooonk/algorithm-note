@@ -10,6 +10,9 @@
 
 ## 📚 문제풀이
 
+### 그리디
+- [1531 잃어버린 괄호](https://github.com/yooooonk/algorithm-note/blob/main/1531.py)
+
 ### BFS
 
 - ✔[2667 단지번호 붙이기](https://github.com/yooooonk/algorithm-note/blob/main/2667.py)
@@ -17,18 +20,16 @@
 - ✔ [7576 토마토](https://github.com/yooooonk/algorithm-note/blob/main/7576.py)
 
 ### 힙
-
 - ✔ [더 맵게](https://github.com/yooooonk/algorithm-note/blob/main/p2_moreSpicy.py)
-
 - ✔ [전화번호 목록](https://github.com/yooooonk/algorithm-note/blob/main/p2_phoneBook.py)
-  ✔ [오픈 채팅방](https://github.com/yooooonk/algorithm-note/blob/main/p2_openChat.py)
-  ✔ [문자열 압축](https://github.com/yooooonk/algorithm-note/blob/main/p2_stringCompression.py)
-  ✔ [짝지어 제거하기](https://github.com/yooooonk/algorithm-note/blob/main/p2_coupleRemove.py)
-  ✔ [배달](https://github.com/yooooonk/algorithm-note/blob/main/p_delivery.py)
-  ✔ [최댓값과 최솟값](https://github.com/yooooonk/algorithm-note/blob/main/p_minnmax.py)
-  ✔ [크레인 인형뽑기](https://github.com/yooooonk/algorithm-note/blob/main/p_crane.py)
-  ✔ [영어 끝말잇기](https://github.com/yooooonk/algorithm-note/blob/main/p_wordChain.py)
-  ✔ [삼각달팽이](https://github.com/yooooonk/algorithm-note/blob/main/p_triangleSnail.py)
+- ✔ [오픈 채팅방](https://github.com/yooooonk/algorithm-note/blob/main/p2_openChat.py)
+- ✔ [문자열 압축](https://github.com/yooooonk/algorithm-note/blob/main/p2_stringCompression.py)
+- ✔ [짝지어 제거하기](https://github.com/yooooonk/algorithm-note/blob/main/p2_coupleRemove.py)
+- ✔ [배달](https://github.com/yooooonk/algorithm-note/blob/main/p_delivery.py)
+- ✔ [최댓값과 최솟값](https://github.com/yooooonk/algorithm-note/blob/main/p_minnmax.py)
+- ✔ [크레인 인형뽑기](https://github.com/yooooonk/algorithm-note/blob/main/p_crane.py)
+- ✔ [영어 끝말잇기](https://github.com/yooooonk/algorithm-note/blob/main/p_wordChain.py)
+- ✔ [삼각달팽이](https://github.com/yooooonk/algorithm-note/blob/main/p_triangleSnail.py)
   ✔ [소수찾기](https://github.com/yooooonk/algorithm-note)
   ✔ [카펫](https://github.com/yooooonk/algorithm-note/blob/main/p_carpet.py)
   ✔ [2x 타일링](https://github.com/yooooonk/algorithm-note/blob/main/p_2xTiling.py)
