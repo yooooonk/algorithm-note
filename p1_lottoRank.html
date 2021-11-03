@@ -1,0 +1,20 @@
+<html>
+  <script>
+      function solution(lottos, win_nums) {
+        const answer = [];
+        const zero = lottos.filter((x)=>x===0).length
+        const winning = lottos.filter((x)=> win_nums.indexOf(x)>-1).length
+
+
+        const max = zero+winning === 0? 6:7-(zero+winning)
+        const min = winning===0? 6: (7-winning)
+
+        return [max,min];
+    }
+  //1.
+    const lottos = [1,2,3,4,5,6]
+    const win_numbs = [7,8,9,10,11,21]
+
+    console.log(solution(lottos,win_numbs))
+  </script>
+</html>
