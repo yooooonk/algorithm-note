@@ -1,0 +1,48 @@
+<html>
+  <script>
+    // 신규 아이디 추천
+    function solution(new_id) {
+    let answer = '';
+
+    answer = new_id
+            .toLowerCase()
+            .replace(/[^\d\w-_.]/g,'')
+            .replace(/\.{2,}/g,'.')
+            .replace(/^\.|\.$/g,'')
+            .padEnd(1,'a')
+            .slice(0,15)
+            .replace(/\.$/g,'')
+
+      answer = answer.padEnd(3,answer[answer.length-1])
+
+
+    // answer = new_id.toLowerCase().split('').filter((x)=>{
+    //   const code = x.charCodeAt(0)
+    //   return (code>=48 && code<=57)||(code>=97 && code<=122)||x==='-'||x==='_'||x==='.'
+    // }).join('').replace(/\.{2,}/g,'.').replace(/^\./,'').replace(/\.$/,'')
+    //
+    //
+    //   if(answer===''){
+    //     answer = answer.replace('','a')
+    //   }
+    //
+    //   if(answer.length >= 16){
+    //     answer = answer.slice(0,15)
+    //   }
+    //
+    //   if(answer.substring(answer.length-1,answer.length)==='.'){
+    //     answer = answer.slice(0,14)
+    //   }
+    //
+    //   if(answer.length <= 2){
+    //     answer = answer.padEnd(3,answer.substring(answer.length-1,answer.length))
+    //   }
+
+    return answer;
+}
+
+    const param1 = "...!@BaT#*..y.abcdefghijklm"
+
+    console.log(solution(param1))
+  </script>
+</html>
