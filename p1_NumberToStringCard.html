@@ -1,0 +1,31 @@
+<html>
+  <script>
+    // 숫자 문자열과 영단어
+      function solution(param1) {
+        let answer = param1;
+        // return Number(param1.replace(/one/g,1)
+        //               .replace(/two/g,2)
+        //             .replace(/three/g,3)
+        // .replace(/four/g,4)
+        // .replace(/five/g,5)
+        // .replace(/six/g,6)
+        // .replace(/seven/g,7)
+        // .replace(/eight/g,8)
+        // .replace(/nine/g,9)
+        // .replace(/zero/g,0))
+
+        let numbers =  ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+        numbers.forEach((x,i)=>{
+          const arr = answer.split(x)
+          answer = arr.join(i)
+        })
+
+        return Number(answer)
+    }
+
+    const param1 = '23four5six7'
+    const win_numbs = [7,8,9,10,11,21]
+
+    console.log(solution(param1))
+  </script>
+</html>
