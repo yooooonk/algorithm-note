@@ -1,0 +1,79 @@
+<html>
+  <script>
+    // 크레인 인형뽑기
+    function solution(board, moves) {
+      let answer =0;
+      const n = board.length
+      const dollStack = {}
+      const basket = []
+
+      for(let i = 1; i <= n ; i++){
+        dollStack[i] = []
+      }
+
+
+      //1. 인형 배열만들기
+      for(let i = n-1; i>=0; i--){
+        for(let j = 0;j<n ; j++){
+          if(board[i][j] !==0){
+            dollStack[j+1].push(board[i][j])
+          }
+        }
+      }
+
+      // 2. 뽑기
+      moves.forEach((x)=>{
+        const doll = dollStack[x].pop();
+        if(doll){
+          if(basket[basket.length-1] === doll){
+          basket.pop()
+          answer =answer+2;
+        }else{
+          basket.push(doll)
+        }
+        }
+
+
+      })
+
+      return answer
+    }
+
+    const board = [[0,0,0,0,0],
+                   [0,0,1,0,3],
+                   [0,2,5,0,1],
+                   [4,2,4,4,2],
+                   [3,5,1,3,1]]
+
+    const moves = [1,5,3,5,1,2,1,4]
+
+    console.log(solution(board,moves))
+  </script>
+</html>
+
+
+<!--function solution(board, moves) {-->
+<!--    let basket = [];-->
+<!--    let answer = 0;-->
+
+<!--    for(let i = 0 ; i < moves.length ; i++){-->
+<!--        for(let j = 0; j<board.length ; j++){-->
+<!--            let doll = board[j][moves[i]-1];-->
+
+<!--            if(doll!==0){-->
+<!--                if(doll === basket[basket.length-1]){-->
+<!--                    basket.pop();-->
+<!--                    answer += 2;-->
+<!--                }else{-->
+<!--                    basket.push(doll);-->
+<!--                }-->
+
+<!--                board[j][moves[i]-1] = 0;-->
+<!--                break;-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+
+<!--    return answer;-->
+
+<!--}-->
