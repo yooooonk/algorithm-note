@@ -1,0 +1,16 @@
+<html>
+  <script>
+    // 내적
+  function solution(a, b) {
+      const answer = a.reduce((acc,current,idx)=> acc+(current*b[idx]),0)
+      return answer;
+  }
+
+    const param1 = [1,2,3,4]
+
+    const param2 = [-3,-1,0,2]
+
+    console.log(solution(param1,param2))
+  </script>
+</html>
+
