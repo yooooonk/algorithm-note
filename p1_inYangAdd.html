@@ -1,0 +1,56 @@
+<html>
+  <script>
+    // 음양 더하기
+   function solution(absolutes, signs) {
+let answer = 0;
+    const n = absolutes.length;
+
+    for(let i = 0; i <n; i++){
+      if(signs[i]){
+        answer += absolutes[i]
+      }else{
+        answer -= absolutes[i]
+      }
+    }
+
+    return answer;
+    // return absolutes.reduce((acc,current,idx)=>
+    //   acc+(current* (signs[idx]? 1:-1)),0
+    // )
+
+}
+
+    const param1 = [4,7,12]
+
+    const param2 = [true,false,true]
+
+    console.log(solution(param1,param2))
+  </script>
+</html>
+
+
+<!--function solution(board, moves) {-->
+<!--    let basket = [];-->
+<!--    let answer = 0;-->
+
+<!--    for(let i = 0 ; i < moves.length ; i++){-->
+<!--        for(let j = 0; j<board.length ; j++){-->
+<!--            let doll = board[j][moves[i]-1];-->
+
+<!--            if(doll!==0){-->
+<!--                if(doll === basket[basket.length-1]){-->
+<!--                    basket.pop();-->
+<!--                    answer += 2;-->
+<!--                }else{-->
+<!--                    basket.push(doll);-->
+<!--                }-->
+
+<!--                board[j][moves[i]-1] = 0;-->
+<!--                break;-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+
+<!--    return answer;-->
+
+<!--}-->
