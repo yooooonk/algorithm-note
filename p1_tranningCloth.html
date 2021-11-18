@@ -1,50 +1,64 @@
 <html>
   <script>
     // 체육복
-  function solution(n, lost, reserve) {
-    var answer = 0;
 
-    const status = {}
-    // 기본1개
-    for(let i=1;i<=n;i++){
-      status[i] = 1
+    function solution(n, lost, reserve) {
+      const stillLost = lost.filter((l)=>{
+        // reserve한테 받기
+        const near = reserve.find((r)=>{
+          return Math.abs(l-r)
+        })
+
+        if(!near) return true; // 가까이 있는 애가 없으면 l(얘)는 계속 lost
+
+        reserve = reserve.filter(r=>r !== near)
+      })
+       return n-stillLost.length
     }
-
-    // reserver
-    reserve.forEach((i)=>{
-      status[i] = status[i]+1
-    })
-
-    // lost
-    lost.forEach((i)=>{
-      status[i] = status[i]-1
-    })
-
-    // 노나주기
-    for(let i=1;i<=n;i++){
-      if(status[i]===2){
-        if(status[i-1]===0){
-          status[i-1]=1;
-          status[i]=1;
-        }
-      }
-
-      if(status[i]===2){
-        if(status[i+1]===0){
-          status[i+1]=1;
-          status[i]=1;
-        }
-      }
-    }
-
-    // 세기
-    for(let i=1;i<=n;i++){
-      if(status[i]>0) answer++
-    }
-
-
-    return answer;
-}
+//   function solution(n, lost, reserve) {
+//     var answer = 0;
+//
+//     const status = {}
+//     // 기본1개
+//     for(let i=1;i<=n;i++){
+//       status[i] = 1
+//     }
+//
+//     // reserver
+//     reserve.forEach((i)=>{
+//       status[i] = status[i]+1
+//     })
+//
+//     // lost
+//     lost.forEach((i)=>{
+//       status[i] = status[i]-1
+//     })
+//
+//     // 노나주기
+//     for(let i=1;i<=n;i++){
+//       if(status[i]===2){
+//         if(status[i-1]===0){
+//           status[i-1]=1;
+//           status[i]=1;
+//         }
+//       }
+//
+//       if(status[i]===2){
+//         if(status[i+1]===0){
+//           status[i+1]=1;
+//           status[i]=1;
+//         }
+//       }
+//     }
+//
+//     // 세기
+//     for(let i=1;i<=n;i++){
+//       if(status[i]>0) answer++
+//     }
+//
+//
+//     return answer;
+// }
 
     const param1 = 5
 
@@ -56,3 +70,11 @@
   </script>
 </html>
 
+
+<!--function solution(n, lost, reserve) {      -->
+<!--    return n - lost.filter(a => {-->
+<!--        const b = reserve.find(r => Math.abs(r-a) <= 1)-->
+<!--        if(!b) return true-->
+<!--        reserve = reserve.filter(r => r !== b)-->
+<!--    }).length-->
+<!--}-->
