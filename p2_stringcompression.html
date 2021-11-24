@@ -1,0 +1,42 @@
+<html>
+  <script>
+    // 문자열 압축
+  const cutString = (string, length) => {
+    return string.match(new RegExp(`.{1,${length}}`, "g"));
+  };
+
+function solution(s) {
+  const n = s.length;
+
+  const answers = []
+
+  // 1. 배열을 1-n으로 자르기
+  for(let len = 1; len<=Math.ceil(s.length/2);len++){
+    let cnt = 1
+    let string = ''
+
+    for(let idx=0;idx<s.length;idx=idx+len){
+      let current = s.substring(idx,idx+len)
+      let next = s.substring(idx+len,idx+len+len)
+
+      // 2. 값 비교
+      if(current === next){
+        cnt++;
+      }else{
+        string = string+`${cnt>=2?cnt:''}`+current;
+        cnt=1;
+      }
+    }
+    answers.push(string.length)
+  }
+
+
+  return Math.min(...answers)
+}
+
+    const param1= 'aabbaccc'
+    const hand = 'right'
+
+    console.log(solution(param1))
+  </script>
+</html>
