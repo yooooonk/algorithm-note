@@ -1,0 +1,115 @@
+<html>
+  <script>
+// 뉴스클러스팅 - 자카드 유사
+
+// const makeStringDic = (str)=>{
+//   const dic = {}
+//       const regex = /^[A-Z]{2}$/;
+//     for(let i = 0;i<str.length;i++){
+//
+//       const temp = str.substring(i,i+2).toUpperCase()
+//       if(regex.test(temp)){
+//         if(dic[temp]){
+//           dic[temp] ++
+//         }else{
+//           dic[temp] = 1
+//         }
+//       }
+//     }
+//
+//     return dic
+// }
+//
+// function solution(str1, str2) {
+//     let answer = 0;
+//
+//     // 1. 두 자리씩 끊어서 - 영문인지만 체크해서 - 딕셔너리에 담기
+//     const dic1 = makeStringDic(str1)
+//     const dic2 = makeStringDic(str2)
+//
+//     // 2. 같은거 있는지 찾고, 각각 저장된 값을 비교 + A,B가 공집합일 때는 1!!
+//   const keys1 = Object.keys(dic1)
+//   const keys2 = Object.keys(dic2)
+//
+//   if(keys1.length===0 && keys2.length===0){
+//     return 65536
+//   }
+//
+//   let union = 0;
+//   let intersection = 0;
+//
+//   keys1.forEach((i)=>{
+//
+//     if(keys2.includes(i)){
+//       intersection = intersection+Math.min(dic1[i],dic2[i])
+//       union = union+Math.max(dic1[i],dic2[i])
+//     }else{
+//       union++;
+//     }
+//   })
+//
+//   keys2.forEach((i)=>{
+//     if(!keys1.includes(i)){
+//       union++
+//     }
+//   })
+//   // intersection이 0일떄?
+//   if(union===0){
+//     return 65536
+//   }else if(intersection===0){
+//     return 0
+//   }else{
+//     return Math.floor(intersection/union*65536)
+//   }
+// }
+
+const makeStringDic = (str)=>{
+  const arr = []
+      const regex = /^[A-Z]{2}$/;
+    for(let i = 0;i<str.length;i++){
+
+      const temp = str.substring(i,i+2).toUpperCase()
+      if(regex.test(temp)){
+        arr.push(temp)
+      }
+    }
+
+    return arr
+}
+
+function solution(str1, str2){
+  const arr1 = makeStringDic(str1)
+  const arr2 = makeStringDic(str2)
+
+  const set = new Set([...arr1,...arr2])
+  console.log(set)
+
+  let union = 0;
+  let intersection = 0;
+
+  set.forEach((i)=>{
+    const has1 = arr1.filter((j)=>i===j).length;
+    const has2 = arr2.filter((j)=>i===j).length;
+
+    union += Math.max(has1,has2)
+    intersection += Math.min(has1,has2)
+
+
+  })
+  return union === 0? 65536:Math.floor(intersection/union*65536);
+}
+
+
+
+
+    const param1 = 'aa1+aa2'
+
+    const param2 = 'AA12'
+
+    const param3=[[2,2,5,4],[3,3,6,6],[5,1,6,3]]
+
+    console.log(solution(param1,param2))
+  </script>
+</html>
+
+
