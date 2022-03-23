@@ -1,0 +1,42 @@
+<html>
+  <script>
+// 수식 최대화
+
+
+
+function solution(expression) {
+    var answer = [];
+
+    const priority = [['*','+','-'],['*','-','+'],
+            ['+','-','*'],['+','*','-'],
+            ['-','+','*'],['-','*','+']]
+
+
+
+  for(let ops of priority){
+    console.log(ops)
+    const exp = expression.split(/(\D)/)
+    for(let op of ops){
+      while(exp.includes(op)){
+        const idx = exp.indexOf(op)
+        console.log(idx)
+        exp.splice()
+      }
+    }
+
+
+  }
+
+    return answer;
+}
+    const param1 = "100-200*300-500+20"
+
+    const param2 = 'AA12'
+
+    const param3=[[2,2,5,4],[3,3,6,6],[5,1,6,3]]
+
+    console.log(solution(param1))
+  </script>
+</html>
+
+
