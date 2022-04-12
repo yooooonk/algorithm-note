@@ -21,7 +21,7 @@ function solution(sugar){
             break;
         }
 
-        rSugar -= 3;
+        rSugar -=
         count ++;
 
     }
